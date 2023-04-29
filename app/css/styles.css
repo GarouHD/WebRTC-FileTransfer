@@ -1,0 +1,113 @@
+:root {
+    --button-blue: #2196f3;
+    --button-grey: #f5f4fa;
+        
+}
+
+/* default styles for css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+body a,
+link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body ul,
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* end of default styles */
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+    color: var(--button-blue);
+    background-color: var(--button-grey);
+    cursor: pointer;
+    width: 50%;
+}
+
+.current-nav {
+    color: white;
+    background-color: var(--button-blue);
+    display: block;
+}
+
+.main-container {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    background-color: var(--button-grey);
+}
+
+.upload-download {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.ud-label:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* .ud-form:not(:last-child)  {
+    margin-bottom: 20px;
+} */
